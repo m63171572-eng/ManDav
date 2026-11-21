@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManDav</title>
+    <link rel="icon" type="image/jpeg" href="ManDav.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="div1">
+    <img src="ManDav.jpg" alt="ManDav">
+    <h1>Welcome to ManDav</h1>
+    <button class="dark" onclick="darkMode()">🌙 Dark Mode</button>
+    <button class="light" onclick="lightMode()">☀️ Light Mode</button>
+    <br>
+    <input type="text" class="promocode" id="promocode" placeholder="Enter promocode">
+    <button class="buttonap" onclick="applyPromocode()">Apply</button>
+    <br>
+    <p id="buyCount">Purchased: 0</p>
+    <p id="totalMoney">Total spent: $0</p>
+    <br>
+    <button class="login" onclick="login()">Log In</button>
+    <br>
+    <input type="search" id="search" placeholder="Search..." onkeydown="if(event.key === 'Enter') submit()">
+    <button class="button1" onclick="submit()">Search</button>
+    <br>
+    <button class="buttonr" onclick="showRatings()">Show Ratings ⭐</button>
+    <button class="buttonq" onclick="question()">For Questions</button>
+    <button class="saved" onclick="showSaved()">Saved</button>
+</div>
+<hr>
+<div class="products">
+
+    <div class="div2" onclick="manDavBook()">
+        <img src="Ֆուտուրիստական M1 անգլերենի աշխատանքային տետրերի հավաքածու - Copy.png" alt="ManDav book">
+        <p>ManDav book</p>
+        <strong>Price: $5</strong>
+        <button class="button2" onclick="event.stopPropagation(); buy('ManDav book', 5)">Buy</button>
+        <button class="vievbut2" onclick="event.stopPropagation(); viewDetails('ManDav book')">View Details</button>
+        <button class="save" onclick="event.stopPropagation(); saveProduct('ManDav book')">Save</button>
+        <div class="rating" onclick="event.stopPropagation()">
+            <span onclick="rateProduct('ManDav book', 1, this)">★</span>
+            <span onclick="rateProduct('ManDav book', 2, this)">★</span>
+            <span onclick="rateProduct('ManDav book', 3, this)">★</span>
+            <span onclick="rateProduct('ManDav book', 4, this)">★</span>
+            <span onclick="rateProduct('ManDav book', 5, this)">★</span>
+        </div>
+    </div>
+    <div class="div3" onclick="nike()">
+        <img src="Nike.jpg" alt="Nike">
+        <p>Nike Shoes</p>
+        <strong>Price: $150</strong>
+        <button class="button3" onclick="event.stopPropagation(); buy1('Nike Shoes', 150)">Buy</button>
+        <button class="vievbut3" onclick="event.stopPropagation(); viewDetails('Nike Shoes')">View Details</button>
+        <button class="save" onclick="event.stopPropagation(); saveProduct('Nike Shoes')">Save</button>
+        <div class="rating" onclick="event.stopPropagation()">
+            <span onclick="rateProduct('Nike Shoes', 1, this)">★</span>
+            <span onclick="rateProduct('Nike Shoes', 2, this)">★</span>
+            <span onclick="rateProduct('Nike Shoes', 3, this)">★</span>
+            <span onclick="rateProduct('Nike Shoes', 4, this)">★</span>
+            <span onclick="rateProduct('Nike Shoes', 5, this)">★</span>
+        </div>
+    </div>
+    <div class="div4" onclick="perfume()">
+        <img src="GIO.jpg" alt="Perfume">
+        <p>Perfume</p>
+        <strong>Price: $50</strong>
+        <button class="button4" onclick="event.stopPropagation(); buy2('Perfume', 50)">Buy</button>
+        <button class="vievbut4" onclick="event.stopPropagation(); viewDetails('Perfume')">View Details</button>
+        <button class="save" onclick="event.stopPropagation(); saveProduct('Perfume')">Save</button>
+        <div class="rating" onclick="event.stopPropagation()">
+            <span onclick="rateProduct('Perfume', 1, this)">★</span>
+            <span onclick="rateProduct('Perfume', 2, this)">★</span>
+            <span onclick="rateProduct('Perfume', 3, this)">★</span>
+            <span onclick="rateProduct('Perfume', 4, this)">★</span>
+            <span onclick="rateProduct('Perfume', 5, this)">★</span>
+        </div>
+    </div>
+    <div class="div5" onclick="adidaslook()">
+        <img src="Adidas shor.jpg" alt="Adidas">
+        <p>Adidas look</p>
+        <strong>Price: $300</strong>
+        <button class="button5" onclick="event.stopPropagation(); buy3('Adidas look', 300)">Buy</button>
+        <button class="vievbut5" onclick="event.stopPropagation(); viewDetails('Adidas look')">View Details</button>
+        <button class="save" onclick="event.stopPropagation(); saveProduct('Adidas look')">Save</button>
+        <div class="rating" onclick="event.stopPropagation()">
+            <span onclick="rateProduct('Adidas look', 1, this)">★</span>
+            <span onclick="rateProduct('Adidas look', 2, this)">★</span>
+            <span onclick="rateProduct('Adidas look', 3, this)">★</span>
+            <span onclick="rateProduct('Adidas look', 4, this)">★</span>
+            <span onclick="rateProduct('Adidas look', 5, this)">★</span>
+        </div>
+    </div>
+    <div class="div6" onclick="Iphone18()">
+        <img src="Iphone 18.jpg" alt="Iphone18">
+        <p>Iphone18</p>
+        <strong>Price: $1300</strong>
+        <button class="button6" onclick="event.stopPropagation(); buy4('Iphone18', 1300)">Buy</button>
+        <button class="vievbut6" onclick="event.stopPropagation(); viewDetails('Iphone18')">View Details</button>
+        <button class="save" onclick="event.stopPropagation(); saveProduct('Iphone18')">Save</button>
+        <div class="rating" onclick="event.stopPropagation()">
+            <span onclick="rateProduct('Iphone18', 1, this)">★</span>
+            <span onclick="rateProduct('Iphone18', 2, this)">★</span>
+            <span onclick="rateProduct('Iphone18', 3, this)">★</span>
+            <span onclick="rateProduct('Iphone18', 4, this)">★</span>
+            <span onclick="rateProduct('Iphone18', 5, this)">★</span>
+        </div>
+    </div>
+    <div class="div7" onclick="laptop()">
+        <img src="laptop.jpg" alt="Laptop">
+        <p>Laptop</p>
+        <strong>Price: $830</strong>
+        <button class="button7" onclick="event.stopPropagation(); buy5('Laptop', 830)">Buy</button>
+        <button class="vievbut7" onclick="event.stopPropagation(); viewDetails('Laptop')">View Details</button>
+        <button class="save" onclick="event.stopPropagation(); saveProduct('Laptop')">Save</button>
+        <div class="rating" onclick="event.stopPropagation()">
+            <span onclick="rateProduct('Laptop', 1, this)">★</span>
+            <span onclick="rateProduct('Laptop', 2, this)">★</span>
+            <span onclick="rateProduct('Laptop', 3, this)">★</span>
+            <span onclick="rateProduct('Laptop', 4, this)">★</span>
+            <span onclick="rateProduct('Laptop', 5, this)">★</span>
+        </div>
+    </div>
+    <div class="div8" onclick="backpack()">
+        <img src="backpak.jpg" alt="Backpack">
+        <p>Backpack</p>
+        <strong>Price: $30</strong>
+        <button class="button8" onclick="event.stopPropagation(); buy6('Backpack', 30)">Buy</button>
+        <button class="vievbut8" onclick="event.stopPropagation(); viewDetails('Backpack')">View Details</button>
+        <button class="save" onclick="event.stopPropagation(); saveProduct('Backpack')">Save</button>
+        <div class="rating" onclick="event.stopPropagation()">
+            <span onclick="rateProduct('Backpack', 1, this)">★</span>
+            <span onclick="rateProduct('Backpack', 2, this)">★</span>
+            <span onclick="rateProduct('Backpack', 3, this)">★</span>
+            <span onclick="rateProduct('Backpack', 4, this)">★</span>
+            <span onclick="rateProduct('Backpack', 5, this)">★</span>
+        </div>
+    </div>
+</div>
+<button class="buttonrel" onclick="location.reload()">🔄 Reload</button>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+

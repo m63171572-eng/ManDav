@@ -1,0 +1,361 @@
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.div1 {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.div1 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.div1 h1 {
+    margin: 20px;
+    font-size: 35px;
+}
+
+.div1 input {
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+}
+
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6,
+.button7,
+.button8 {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px auto 0;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s;
+}
+
+.button1 {
+    display: inline-block;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover,
+.button6:hover,
+.button7:hover,
+.button8:hover {
+    background-color: #0056b3;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #00000030;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover,
+.div7:hover,
+.div8:hover {
+    transform: translateY(-10px);
+}
+
+.div2 img,
+.div3 img,
+.div4 img,
+.div5 img,
+.div6 img,
+.div7 img,
+.div8 img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.div2 p,
+.div3 p,
+.div4 p,
+.div5 p,
+.div6 p,
+.div7 p,
+.div8 p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.div2 strong,
+.div3 strong,
+.div4 strong,
+.div5 strong,
+.div6 strong,
+.div7 strong,
+.div8 strong {
+    color: green;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.vievbut2,
+.vievbut3,
+.vievbut4,
+.vievbut5,
+.vievbut6,
+.vievbut7,
+.vievbut8 {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 10px auto 0;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s;
+}
+
+.vievbut2:hover,
+.vievbut3:hover,
+.vievbut4:hover,
+.vievbut5:hover,
+.vievbut6:hover,
+.vievbut7:hover,
+.vievbut8:hover {
+    background-color: #218838;
+}
+
+.dark {
+    background-color: #111;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.buttonrel {
+    padding: 12px 20px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    margin: 10px auto 0;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s;
+}
+
+.buttonrel:hover {
+    background-color: #e0a800;
+}
+
+.login {
+    background-color: #6366f1;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.login:hover {
+    background-color: #4338ca;
+    transform: scale(1.05);
+}
+
+.save {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: transparent;
+    color: #555;
+    border: none;
+    font-size: 12px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save:hover {
+    color: #6366f1;
+    transform: scale(1.05);
+}
+
+.buttonq {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonq:hover {
+    background-color: #0056b3;
+}
+
+.saved {
+    padding: 12px 20px;
+    background-color: #ffc107;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.saved:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+
+#buyCount,
+#totalMoney {
+    display: inline-block;
+    margin: 10px;
+}
+
+.buttonq,
+.saved {
+    display: inline-block;
+    margin: 5px;
+    position: static;
+    vertical-align: middle;
+}
+
+.promocode {
+    padding: 12px;
+    width: 200px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+
+.buttonap {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    top: 20px;
+    right: 1150px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px auto;
+}
+
+.buttonas {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.buttonas button {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 18px;
+    padding: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buttonas button:hover {
+    color: #ffc107;
+    transform: scale(1.2);
+}
+
+.buttonr {
+    padding: 12px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px;
+}
